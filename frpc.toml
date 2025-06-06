@@ -1,0 +1,26 @@
+serverAddr = "frps_ip"
+serverPort = 7000
+
+log.to = "./frpc.log"
+log.level = "info"
+log.maxDays = 3
+
+auth.method = "token"
+auth.token = "your_token" #Match with frps.toml 与frps.toml匹配
+
+#transport.tls.certFile = "./ssl/client.crt"
+#transport.tls.keyFile = "./ssl/client.key"
+#transport.tls.trustedCaFile = "./ssl/ca.crt"
+#The certificate path is presented in this article as a relative path in Windows.  `/ssl` folder
+#证书路径本文展示为windows中相对路径。 ssl文件夹
+
+
+[[visitors]]
+name = "nas_stcp_ssh visitor"
+type = "stcp"
+serverName = "nas_stcp_ssh" #Same stcp name as the corresponding frpc  与对应frpc stcp的name相同
+secretKey = "stcp_key" ##Same stcp secretKey as the corresponding frpc 与对应frpc stcp的secretKey相同
+bindAddr = "127.0.0.1"
+bindPort = 39001 
+transport.useEncryption = true
+transport.useCompression = true
