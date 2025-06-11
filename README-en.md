@@ -48,7 +48,7 @@ frp/         #root dir
 
 ### 4.3 install.bat / uninstall.bat
 
-Create by using AI
+- Create by using AI
 
 ### 4.4 frps/frpc.toml
 
