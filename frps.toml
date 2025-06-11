@@ -1,0 +1,51 @@
+bindAddr = "0.0.0.0"
+bindPort = 7000
+
+kcpBindPort = 7000
+quicBindPort = 7002
+
+auth.method = "token"
+auth.token = "your_token"
+#建议token尽可能复杂
+#Suggest making the token as complex as possible
+
+#默认端口，按需修改。
+#Default port, modify as needed.
+#vhostHTTPPort = 80   
+#vhostHTTPSPort = 443
+
+webServer.addr = "0.0.0.0"
+webServer.port = 6443
+webServer.user = "admin"
+webServer.password = "dash_password"
+#建议尽可能复杂
+#Suggest making the password as complex as possible
+
+transport.maxPoolCount = 2000
+transport.tcpMux = true
+transport.tcpMuxKeepaliveInterval = 60
+transport.tcpKeepalive = 7200
+
+#transport.tls.certFile = "./ssl/server.crt"
+#transport.tls.keyFile = "./ssl/server.key"
+#transport.tls.trustedCaFile = "./ssl/ca.crt"
+#证书路径本文展示为windows中相对路径 
+#The certificate path is presented in this article as a relative path in Windows
+
+log.to = "./frps.log"
+log.level = "info"
+log.maxDays = 3
+log.disablePrintColor = false
+
+allowPorts = [
+  { start = 50000, end = 59999 }
+]
+#frpc中remote_port的范围，建议30000以上端口，一般不会冲突
+#The range of remote_ports in frpc.(Suggest above 30000.)
+
+maxPortsPerClient = 0 
+#每个frpc代理数量上限。
+#Maximum number of each frpc agent.
+
+udpPacketSize = 1500
+natholeAnalysisDataReserveHours = 168
