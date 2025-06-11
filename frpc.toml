@@ -8,9 +8,9 @@ log.maxDays = 3
 auth.method = "token"
 auth.token = "your_token" #与frps.toml匹配  #Match with frps.toml
 
-transport.tls.certFile = "./ssl/client.crt"
-transport.tls.keyFile = "./ssl/client.key"
-transport.tls.trustedCaFile = "./ssl/ca.crt"
+#transport.tls.certFile = "./ssl/client.crt"
+#transport.tls.keyFile = "./ssl/client.key"
+#transport.tls.trustedCaFile = "./ssl/ca.crt"
 #证书路径本文展示为windows中相对路径 
 #The certificate path is presented in this article as a relative path in Windows
 
