@@ -49,7 +49,7 @@ frp/         #根文件夹
 
 ### 4.3 install.bat / uninstall.bat
 
-使用ai创建
+- 使用ai创建
 
 ### 4.4 frps/frpc.toml
 
