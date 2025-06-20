@@ -1,6 +1,6 @@
 # frp_windows_with_script
 
-## [中文版](https://github.com/Vekixx/frp_windows_with_script/blob/main/README.md)
+ [中文版](https://github.com/Vekixx/frp_windows_with_script/blob/main/README.md) | English Version
 
 frp windows client with onekey script
 
