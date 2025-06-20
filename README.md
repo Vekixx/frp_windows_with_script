@@ -1,5 +1,5 @@
 # frp_windows_with_script
-## [En Version](https://github.com/Vekixx/frp_windows_with_script/blob/main/README-en.md)
+中文版 | [English Version](https://github.com/Vekixx/frp_windows_with_script/blob/main/README-en.md)
 
 frp Windows 服务端 + 一键部署脚本
 
